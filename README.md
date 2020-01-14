@@ -2,11 +2,11 @@
 
 This project use srs-librtmp exported from [srs project](https://github.com/ossrs/srs) to push rtmp stream over quic with [RawQuic library](https://github.com/sonysuqin/RawQuic). 
 
-## srs-librtmp
-Base on srs 2.0release, exported as single file, added some platform specified adaption.
-
 ## Supported platform
 Currently tested on Linux/Windows, other platforms like android/ios should also be all right.
+
+## srs-librtmp
+Base on srs 2.0release, exported as single file, added some platform specified adaption.
 
 ## Server
 We provide [nginx-quic](https://github.com/evansun922/nginx-quic) with quic patched, rtmp module with quic also supported now.
