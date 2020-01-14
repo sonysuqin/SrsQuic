@@ -7,6 +7,11 @@ Currently tested on Linux/Windows, other platforms like android/ios should also 
 
 ## srs-librtmp
 Base on srs 2.0release, exported as single file, added some platform specified adaption.
+See
+```
+SrsQuic/trunk/out/srs_librtmp.h
+SrsQuic/trunk/out/srs_librtmp.cpp
+```
 
 ## Server
 We provide [nginx-quic](https://github.com/evansun922/nginx-quic) with quic patched, rtmp module with quic also supported now.
