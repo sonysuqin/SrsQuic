@@ -75,6 +75,7 @@ cd SrsQuic/build
 cmake .
 make
 ```
+This will build src/trunk/research/librtmp/srs_h264_raw_publish.c with srs-librtmp and RawQuic library, this demo can only push raw h264 stream.
 
 ### Prepare h264 raw file
 ```
