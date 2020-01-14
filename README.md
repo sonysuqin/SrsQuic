@@ -9,7 +9,7 @@ Base on srs 2.0release, exported as single file, added some platform specified a
 Currently tested on Linux/Windows, other platforms like android/ios should also be all right.
 
 ## Server
-We provide [nginx-quic server](https://github.com/evansun922/nginx-quic) with quic patched, rtmp module with quic also supported now.
+We provide [nginx-quic](https://github.com/evansun922/nginx-quic) with quic patched, rtmp module with quic also supported now.
 Rtmp additional configure
 ```
 rtmp {
@@ -61,7 +61,7 @@ librawquic.so
 ```
 
 ### Call api in srs_librtmp.h
-By use RTMP OVER QUIC, you should call srs_rtmp_over_quic_create instead of srs_rtmp_create.
+For using rtmp over quic, you should call srs_rtmp_over_quic_create instead of srs_rtmp_create.
 
 ## Demo
 ### Build
