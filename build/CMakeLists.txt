@@ -1,0 +1,24 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
+
+PROJECT(raw_h264_publisher)
+
+include(CheckCXXCompilerFlag)
+
+SET(CMAKE_BUILD_TYPE Release)
+SET(EXECUTABLE_OUTPUT_PATH ../bin)
+
+SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g2 -ggdb")  
+SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")  
+
+INCLUDE_DIRECTORIES(../include)
+INCLUDE_DIRECTORIES(../src/trunk/out)
+
+LINK_DIRECTORIES(../lib/linux)
+
+AUX_SOURCE_DIRECTORY(../src/trunk/out SRC_DIR)
+AUX_SOURCE_DIRECTORY(../src/trunk/research/librtmp SRC_DIR)
+
+ADD_EXECUTABLE(raw_h264_publisher ${SRC_DIR})
+TARGET_LINK_LIBRARIES(raw_h264_publisher rawquic)
+
+
