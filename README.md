@@ -9,7 +9,7 @@ Base on srs 2.0release, exported as single file, added some platform specified a
 Currently tested on Linux/Windows, other platforms like android/ios should also be all right.
 
 ## Server
-We provide [nginx server](https://github.com/evansun922/nginx-quic) with quic patched, rtmp module with quic also supported now.
+We provide [nginx-quic server](https://github.com/evansun922/nginx-quic) with quic patched, rtmp module with quic also supported now.
 Rtmp additional configure
 ```
 rtmp {
@@ -77,7 +77,7 @@ ffmpeg -i 1.mp4 -c:v copy -bsf:v h264_mp4toannexb -an 1.h264
 ```
 
 ### Push stream
-A test [server]((https://github.com/evansun922/nginx-quic)) is running on roblin.cn, you SHOULD setup your own, please refer to [nginx](https://github.com/evansun922/nginx-quic).
+A test [server](https://github.com/evansun922/nginx-quic) is running on roblin.cn, you SHOULD setup your own, please refer to [nginx-quic](https://github.com/evansun922/nginx-quic).
 ```
 cd SrsQuic/bin
 ./raw_h264_publisher 1.h264 rtmp://roblin.cn:1935/live/1 25
