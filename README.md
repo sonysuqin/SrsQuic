@@ -94,3 +94,5 @@ You can pull with fflay or vlc.
 ```
 ffplay 'rtmp://roblin.cn:1935/live/1'
 ```
+
+Copyright © 2020 Sohu.com Inc. All Rights Reserved.
